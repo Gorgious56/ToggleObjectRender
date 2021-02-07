@@ -1,7 +1,8 @@
 bl_info = {
     "name": "Toggle Object Render",
     "blender": (2, 80, 0),
-    "category": "Object",
+    "category": "Object",	
+    "version": (0, 1, 0),
     "author":"Gorgious56",
     "description":"Add a toggle in the object properties to quicly set the object as Rendered/Not rendered",
 }
@@ -58,8 +59,8 @@ def register():
 
 
 def unregister():
-    bpy.utils.unregister_class(LayoutDemoPanel)
     bpy.utils.unregister_class(ToggleRenderPanel)
+    bpy.utils.unregister_class(ToggleObjectRender)
 
 
 if __name__ == "__main__":
